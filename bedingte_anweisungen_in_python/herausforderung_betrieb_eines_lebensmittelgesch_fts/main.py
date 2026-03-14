@@ -3,10 +3,10 @@ revenue = 2000
 is_business_successful = False
 
 # Determine business success
-___:
-  ___ = ___
-___:
-  ___ = ___
+if revenue >= 2000:
+  is_business_successful = True
+else:
+  is_business_successful = False
 
 # Testing
 print("Is besiness hits the desired revenue?", is_business_successful)
