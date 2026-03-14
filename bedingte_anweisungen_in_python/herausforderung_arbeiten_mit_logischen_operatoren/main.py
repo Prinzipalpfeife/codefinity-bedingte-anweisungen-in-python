@@ -4,13 +4,13 @@ johns_age = 10
 mikes_age = 18
 
 # Checking if both Bob and John can enter the park (both must be adults)
-can_bob_and_john_enter = bobs_age > 18 or (johns_age > 18)
+can_bob_and_john_enter = (bobs_age >= 18) and (johns_age >= 18)
 
 # Checking if either Alice or Mike can enter the park (at least one must be an adult)
-can_alice_or_mike_enter = alices_age > 18 or (mikes_age >= 18)
+can_alice_or_mike_enter = (alices_age >= 18) or (mikes_age >= 18)
 
 # Checking if Bob, Alice, and John can all enter the park together (all must be adults)
-can_bob_alice_john_enter = bobs_age >= 18 or (alices_age >= 18) or (johns_age >= 18)
+can_bob_alice_john_enter = (bobs_age >= 18) and (alices_age >= 18) and (johns_age >= 18)
 
 # Testing
 print("Can Bob and John enter the park together? ", can_bob_and_john_enter)
